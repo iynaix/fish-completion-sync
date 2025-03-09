@@ -49,7 +49,7 @@ function fish_completion_sync --on-variable XDG_DATA_DIRS
       if set -q FISH_COMPLETION_DEBUG
         echo "adding: $data_dir"
       end
-      set -a fish_complete_path $data_dir
+      set -p fish_complete_path $data_dir
       set -a FISH_COMPLETION_ADDITIONS $data_dir
     end
   end
